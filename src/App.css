@@ -2,37 +2,66 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todoList {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todoList h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(61, 106, 188)
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todoList ul {
+  list-style-type: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.todoList li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todoList input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.inputButton {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+.inputButton input[type="text"] {
+  font-size: 1rem;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.todoList button {
+  background-color: #5691ee;
+  color: #fff;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.todoList button:hover {
+  background-color: #515050;
+}
+.todoList .completed {
+  text-decoration: line-through;
 }
